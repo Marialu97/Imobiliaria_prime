@@ -13,7 +13,7 @@ import { catchError } from 'rxjs/operators';
 export class ImoveisInteressadosComponent implements OnInit {
   public imoveisFavoritos: any[] = [];
   private clienteId = 2; // pegar do login
-  private apiUrl = 'http://localhost:3000';
+  private apiUrl = 'http://localhost:3009';
 
   constructor(
     private interessadosService: InteressadosService,

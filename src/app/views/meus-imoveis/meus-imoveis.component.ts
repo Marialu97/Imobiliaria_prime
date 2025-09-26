@@ -22,7 +22,7 @@ import { FooterComponent } from '../../templates/footer/footer.component';
 })
 export class MeusImoveisComponent implements OnInit {
   meusImoveis: any[] = [];
-  private apiUrl = 'http://localhost:3000/imoveis'; // endpoint do backend
+  private apiUrl = 'http://localhost:3009/imoveis'; // endpoint do backend
 
   constructor(private http: HttpClient, private router: Router) {}
 

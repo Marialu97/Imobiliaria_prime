@@ -8,7 +8,7 @@ import { Interessado } from '../models/interessado.model';
   providedIn: 'root'
 })
 export class InteressadosService {
-  private apiUrl = 'http://localhost:3000';
+  private apiUrl = 'http://localhost:3009';
 
   constructor(private http: HttpClient) {}
 

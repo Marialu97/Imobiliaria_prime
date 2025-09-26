@@ -24,7 +24,7 @@ import { FooterComponent } from '../../templates/footer/footer.component';
 })
 export class CadastrarComponent implements OnInit {
   imovelForm: FormGroup;
-  private apiUrl = 'http://localhost:3000/imoveis';
+  private apiUrl = 'http://localhost:3009/imoveis';
   isEditMode = false;
   imovelId: any;
 

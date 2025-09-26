@@ -7,7 +7,7 @@ import { MeuImovel } from '../models/meu-imovel.model';
   providedIn: 'root'
 })
 export class MeusImoveisService {
-  private apiUrl = "http://localhost:3000/meus-imoveis";
+  private apiUrl = "http://localhost:3009/meus-imoveis";
   constructor(private http: HttpClient) {}
 
   getMeusImoveis(): Observable<MeuImovel[]> {

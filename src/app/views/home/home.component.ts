@@ -22,7 +22,7 @@ interface Imovel {
 export class HomeComponent implements OnInit {
   imoveis: Imovel[] = [];
   clienteId = 2; // pegar do login real
-  private apiUrl = 'http://localhost:3000';
+  private apiUrl = 'http://localhost:3009';
 
   constructor(
     private http: HttpClient,

@@ -11,7 +11,7 @@ export class NotificacaoService {
 
   constructor() {}
 
-  mostrar(mensagem: string, duracao: number = 3000) {
+  mostrar(mensagem: string, duracao: number = 3009) {
     this._mensagem.next(mensagem);
     setTimeout(() => this._mensagem.next(null), duracao);
   }

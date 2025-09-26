@@ -1,0 +1,45 @@
+{
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "Maria Lu",
+      "email": "marialu04@gmail.com",
+      "senha": "1234"
+    }
+  ],
+  "imoveis": [
+    {
+      "id": "1",
+      "titulo": "Casa Jardim Bela Vista",
+      "categoria": "Casa",
+      "cidade": "São Paulo",
+      "descricao": "casa luxuosa",
+      "valor": 56000
+    },
+    {
+      "id": "2",
+      "titulo": "Apartamento 2 Quartos Parque Hippolyto",
+      "categoria": "Apartamento",
+      "cidade": "Campinas",
+      "descricao": "apt chique",
+      "valor": 25000
+    }
+  ],
+  "interesses": [
+    {
+      "id": "1",
+      "clienteId": 2,
+      "imovelId": 1
+    },
+    {
+      "id": "3",
+      "clienteId": 2,
+      "imovelId": 1
+    },
+    {
+      "id": "4",
+      "clienteId": 2,
+      "imovelId": 2
+    }
+  ]
+}

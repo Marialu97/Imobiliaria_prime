@@ -1,0 +1,14 @@
+<!-- interessados.component.html -->
+<app-header-corretor></app-header-corretor>
+<section class="listar-interessados">
+  <h2>Clientes Interessados</h2>
+  <div class="cards-container">
+    <div class="card" *ngFor="let interesse of interessados">
+      <p><strong>ID Interesse:</strong> {{ interesse.id }}</p>
+      <p><strong>Cliente ID:</strong> {{ interesse.clienteId }}</p>
+      <p><strong>Imóvel ID:</strong> {{ interesse.imovelId }}</p>
+      <button (click)="removerInteressado(interesse.id)">Excluir</button>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

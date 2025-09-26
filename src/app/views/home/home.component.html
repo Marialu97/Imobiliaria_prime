@@ -1,0 +1,37 @@
+<app-header></app-header>
+
+<div class="home-container">
+  <!-- HERO -->
+  <header class="hero">
+    <h1>Bem-vindo à Prime Imobiliária</h1>
+  </header>
+
+  <!-- DESTAQUES -->
+  <section class="imoveis-destaque">
+    <h2>Imóveis de Destaque</h2>
+    <input type="text" placeholder="Procurar imóvel" class="search-bar" />
+
+    <div class="cards-container">
+      <div class="card" *ngFor="let imovel of imoveis">
+        <div class="card-header">
+          <h3>{{ imovel.titulo }}</h3>
+          <span class="heart"
+                [class.favorito]="imovel.favorito"
+                (click)="favoritar(imovel)">
+            ♥
+          </span>
+        </div>
+
+        <p>{{ imovel.descricao }}</p>
+        <p *ngIf="imovel.tipo"><strong>Tipo:</strong> {{ imovel.tipo }}</p>
+        <p *ngIf="imovel.cidade"><strong>Cidade:</strong> {{ imovel.cidade }}</p>
+        <p *ngIf="imovel.preco"><strong>Preço:</strong> {{ imovel.preco | currency:'BRL' }}</p>
+
+        <button class="btn-secondary">Ver Imóvel</button>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+<app-footer></app-footer>

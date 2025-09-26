@@ -1,0 +1,45 @@
+<app-header></app-header>
+<br><br>
+
+<div class="perfil-info">
+  <!-- Avatar -->
+  <div class="perfil-avatar">
+    <img [src]="perfil.avatar || 'https://cdn-icons-png.flaticon.com/512/847/847969.png'" alt="Avatar">
+    <label for="avatar-upload" class="avatar-icon">
+      <i class="fa fa-camera"></i>
+    </label>
+    <input type="file" id="avatar-upload" (change)="alterarAvatar($event)" hidden>
+  </div>
+
+  <!-- Campos -->
+  <div class="form-group">
+    <label>Nome Completo</label>
+    <input type="text" [(ngModel)]="perfil.nome">
+  </div>
+
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" [(ngModel)]="perfil.email">
+  </div>
+
+  <div class="form-group">
+    <label>Telefone</label>
+    <input type="text" [(ngModel)]="perfil.telefone">
+  </div>
+
+  <div class="form-group">
+    <label>Cidade</label>
+    <input type="text" [(ngModel)]="perfil.cidade">
+  </div>
+
+  <div class="form-group interesses">
+    <label>Interesses</label>
+    <textarea [(ngModel)]="perfil.interesses"></textarea>
+  </div>
+
+  <div class="btn-container">
+    <button class="btn-salvar" (click)="salvarPerfil()">Salvar</button>
+  </div>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,13 @@
+<!-- imoveis-interessados.component.html -->
+<app-header></app-header>
+<section class="interessados-container">
+  <h2>Meus Favoritos</h2>
+  <div class="cards-container">
+    <div class="card" *ngFor="let imovel of imoveisFavoritos">
+      <h3>{{ imovel.titulo }}</h3>
+      <p>{{ imovel.descricao }}</p>
+      <p><strong>Cidade:</strong> {{ imovel.cidade }}</p>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

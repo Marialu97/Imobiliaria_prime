@@ -1,0 +1,56 @@
+<app-header-corretor></app-header-corretor>
+<div class="cadastro-imovel">
+  <h2>Cadastrar/Editar Imóvel</h2>
+
+  <form [formGroup]="imovelForm" (ngSubmit)="cadastrarImovel()">
+    <div class="linha">
+      <div class="campo">
+        <label for="id">ID</label>
+        <input id="id" type="text" formControlName="id" />
+      </div>
+
+      <div class="campo flex-2">
+        <label for="titulo">Título</label>
+        <input id="titulo" type="text" formControlName="titulo" />
+      </div>
+
+      <div class="campo">
+        <label for="categoria">Categoria</label>
+        <select id="categoria" formControlName="categoria">
+          <option>Casa</option>
+          <option>Apartamento</option>
+          <option>Terreno</option>
+          <option>Comercial</option>
+          <option>Studio</option>
+          <option>Flat</option>
+          <option>Sobrado</option>
+          <option>KitNet</option>
+          <option>Cobertura</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="linha">
+      <div class="campo flex-2">
+        <label for="cidade">Cidade</label>
+        <input id="cidade" type="text" formControlName="cidade" />
+      </div>
+
+      <div class="campo flex-2">
+        <label for="valor">Valor</label>
+        <input id="valor" type="number" formControlName="valor" />
+      </div>
+    </div>
+
+    <div class="linha">
+      <div class="campo flex-3">
+        <label for="descricao">Descrição</label>
+        <textarea id="descricao" rows="4" formControlName="descricao"></textarea>
+      </div>
+    </div>
+
+    <button type="submit">Cadastrar/Editar Imóvel</button>
+  </form>
+</div>
+
+<app-footer></app-footer>
